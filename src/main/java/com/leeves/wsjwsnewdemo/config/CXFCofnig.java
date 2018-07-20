@@ -35,13 +35,8 @@ public class CXFCofnig {
     }
 
     @Bean
-    public LeevesService leevesService() {
-        return new LeevesServiceImpl();
-    }
-
-    @Bean
     public Endpoint endpoint() {
-        EndpointImpl endpoint = new EndpointImpl(springBus(), leevesService());
+        EndpointImpl endpoint = new EndpointImpl(springBus(), new LeevesServiceImpl());
         endpoint.publish("/leevesService");
         return endpoint;
     }

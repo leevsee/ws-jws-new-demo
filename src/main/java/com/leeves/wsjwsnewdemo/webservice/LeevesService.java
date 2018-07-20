@@ -1,6 +1,8 @@
 package com.leeves.wsjwsnewdemo.webservice;
 
+import javax.jws.Oneway;
 import javax.jws.WebMethod;
+import javax.jws.WebResult;
 import javax.jws.WebService;
 
 /**

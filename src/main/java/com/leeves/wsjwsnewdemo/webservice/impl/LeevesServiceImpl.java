@@ -3,6 +3,7 @@ package com.leeves.wsjwsnewdemo.webservice.impl;
 import com.leeves.wsjwsnewdemo.webservice.LeevesService;
 
 import javax.jws.WebService;
+import javax.jws.soap.SOAPBinding;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,7 +19,6 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @WebService(targetNamespace = "http://webservice.wsjwsnewdemo.leeves.com/", endpointInterface = "com.leeves.wsjwsnewdemo.webservice.LeevesService")
-//@WebService
 public class LeevesServiceImpl implements LeevesService {
 
     @Override
